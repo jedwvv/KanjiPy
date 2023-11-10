@@ -41,7 +41,7 @@ class KanjiDataBase:
             while True:
                 user_reading = get_user_input_string("\t{}) {}: ".format(s, kanji))
                 if user_reading != reading:
-                    user_input = get_user_input_string("\nWould you like to try again? 'y' or 'n': ", valid_choices=["y", "n"])
+                    user_input = get_user_input_string("\nSorry, that's not quite right.\nWould you like to try again? 'y' or 'n': ", valid_choices=["y", "n"])
                     if user_input == "y":
                         continue
                     else:
