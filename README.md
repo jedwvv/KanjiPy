@@ -8,7 +8,7 @@ This was originally intended for my personal learning goal of ultimately taking 
 - Python>=3.9  
 
 ## Who is this for?
-- Japanese learners like me who want to extensively test their kanji reading skills (perhaps to take the JLPT exam).
+- Japanese learners like me who want to extensively test their kanji reading skills (e.g. to take the JLPT exam).
 - People who want to personalize a list of kanji to memorize, for example, to learn 100 new kanji words/phrases a week, or 10 kanji words/phrases a day!
 
 Simply run the program in a console that supports utf-8 encoding. To check if your console is supported run `import sys; sys.getdefaultencoding()` in your Python shell. If it prints `'utf-8'` then this program should work.  
