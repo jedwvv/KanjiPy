@@ -9,7 +9,7 @@ random.seed(datetime.now().timestamp())
 ############################################################
 #### CHANGE DESIRED DATABASE FILE DIRECTORY UNDER HERE #####
 ############################################################
-filedir = "databases/database1_100.json"
+filedir = "databases/N1_1_100.json"
 
 class KanjiDataBase:
     def __init__(self):
