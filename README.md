@@ -28,7 +28,7 @@ python kanjipy.py
 ```
 
 ## To change to your own personalised Kanji list:
-1. Make a json text file in the folder `'databases/'`.  
+1. Make a json text file in the folder `databases/`.  
 2. In a dictionary format, enter your kanji entries as key, value pairs where key is the kanji, and value is its hiragana reading. 
 3. In the `kanjipy.py` script, change the `filedir` variable to store the directory of your new json file (Line 12). The location is commented near the top of the script for easy access.
 
@@ -41,4 +41,4 @@ Make sure there are no duplicate kanji words/phrases!
 - I am in the process of learning the Kanji from the book:「日本語能力試験ターゲット1000 N1 漢字 」(ISBN: 4010924217). As I study the kanji (in order), I will update the uploaded kanji database, partitioning the 1000+ kanji characters into separate files.
 - In the future, I plan to upload database for the kanji characters from 「日本語能力試験ターゲット1000 N2 漢字」(ISBN: 4010924225) which I have already completely studied prior to making this python script. This is to include most (if not all) of the [常用漢字/Jōyō Kanji](https://www.kanshudo.com/collections/joyo_kanji). 
 - Since I am following these two books, I adopt the naming convention `N1_A_B.json` or `N2_A_B.json` for my kanji database where A and B denote the starting and ending character index from the corresponding N1 or N2 book. You may ignore these and make your own personalised database as explained above.
-- Once those 2000+ N1 and N2 characters are in the database, I will compile all the words/phrases into one text file called `'joyo_kanji.json'`. 
+- Once those 2000+ N1 and N2 characters are in the database, I will compile all the words/phrases into one text file called `joyo_kanji.json`. 
