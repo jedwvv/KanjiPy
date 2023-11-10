@@ -1,5 +1,6 @@
 # KanjiPy
 A simple Python script to learn Kanji at your own pace.  
+![](https://github.com/jedwvv/KanjiPy/blob/main/kanjipy.gif)  
 
 ## Requirement:
 - Python>=3.9  
