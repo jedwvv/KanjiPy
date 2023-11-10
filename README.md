@@ -7,7 +7,7 @@ This was originally intended for my personal learning goal of ultimately taking 
 ## Requirement:
 - Python>=3.9  
 
-## Who is this for?
+## Whom may this be useful to?
 - Japanese learners like me who want to extensively test their kanji reading skills (e.g. to take the JLPT exam).
 - People who want to personalize a list of kanji to memorize, for example, to learn 100 new kanji words/phrases a week, or 10 kanji words/phrases a day!
 
