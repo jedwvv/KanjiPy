@@ -32,10 +32,24 @@ class KanjiDataBase:
     def get_size( self ):
         return len( self.data )
 
-    def test_kanjireading( self, number_to_test = 1 ):
+
+    def test_kanjireading( self, number_to_test: int = 1 ):
+        """
+        This tests the user's knowledge of the kanji readings from the current kanji database.
+        Args:
+            number_to_test [int]: The number of kanji words/phrases to uniquely sample from the database
+        Returns:
+            None
+        """
+
+        #Make sure number_to_test is always less than or equal to size of current database
         if number_to_test > self.get_size():
             raise Exception("Not enough kanji in database for desired number of kanji to test. Add more kanji or lower test number requirement.")
+        
+        #Sample number_to_test unique kanji to test,
         test_kanji = random.sample( list(self.data.items()), number_to_test )
+        
+        #Prompts for the user's guesses begin here.
         print("\nTry to enter the correct reading for the following kanji.")
         for s, (kanji, reading) in enumerate(test_kanji):
             while True:
@@ -53,7 +67,7 @@ class KanjiDataBase:
                     break
 
 def main():   
-    #Start Program 
+    #Initialise and load kanji database
     kanji_data = KanjiDataBase()
     kanji_data.load_database(filedir)
     
