@@ -4,8 +4,7 @@ A simple Python script to learn Kanji at your own pace.
 
 This was originally intended for my personal learning goal of ultimately taking the JLPT N1 exam.  
 
-## Requirement:
-- Python>=3.9  
+Tested with `python>=3.9`
 
 ## Whom may this be useful to?
 - Japanese learners like me who want to extensively test their kanji reading skills (e.g. to take the JLPT exam).
