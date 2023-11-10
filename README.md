@@ -8,7 +8,7 @@ A simple Python script to learn Kanji at your own pace.
 - Japanese learners like me who want to extensively test their kanji reading skills (perhaps to take the JLPT exam).
 - People who want to personalize a list of kanji to memorize, for example, to learn 100 new kanji words/phrases a week, or 10 kanji words/phrases a day!
 
-Simply run in a console that supports utf-8 encoding. To check if your console is supported run `import sys; sys.getdefaultencoding()` in your Python shell. If it prints `'utf-8'` then this program should work.  
+Simply run the program in a console that supports utf-8 encoding. To check if your console is supported run `import sys; sys.getdefaultencoding()` in your Python shell. If it prints `'utf-8'` then this program should work.  
 
 ## To download this program and my database:
 - Run: `git clone https://github.com/jedwvv/KanjiPy.git`
