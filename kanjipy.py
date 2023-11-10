@@ -161,6 +161,7 @@ def clear():
         _ = system('cls') #Windows command
     else:
         _ = system('clear') #Nux style command
+    print("\nPress Ctrl+C at any time to force exit.")
 
 if __name__ == "__main__":
     main()
