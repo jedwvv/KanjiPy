@@ -11,7 +11,7 @@ This was originally intended for my personal learning goal of ultimately taking 
 - Japanese learners like me who want to extensively test their kanji reading skills (e.g. to take the JLPT exam).
 - People who want to personalize a list of kanji to memorize, for example, to learn 100 new kanji words/phrases a week, or 10 kanji words/phrases a day! See how to personalize your kanji list below.  
 
-Simply run the program in a console that supports utf-8 encoding. To check if your console is supported run in a Python shell:
+Simply run the program in a console that supports utf-8 encoding. To check if your console is supported, run the following in a Python shell.
 ```
 import sys
 sys.getdefaultencoding()
