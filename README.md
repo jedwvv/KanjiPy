@@ -18,10 +18,14 @@ sys.getdefaultencoding()
 If it prints `'utf-8'` then this program should work.  
 
 ## To download this program and my database:
-- Run: `git clone https://github.com/jedwvv/KanjiPy.git`
+```
+git clone https://github.com/jedwvv/KanjiPy.git
+```
 
 ## To use the program:
-- Run: `python kanjipy.py`  
+```
+python kanjipy.py
+```
 
 ## To change to your own personalised Kanji list:
 1. Make a json text file in the folder `'databases/'`.  
