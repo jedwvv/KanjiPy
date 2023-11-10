@@ -20,11 +20,11 @@ Simply run the program in a console that supports utf-8 encoding. To check if yo
 1. Make a json text file in the folder `'databases/'`.  
 2. In a dictionary format, enter your kanji entries as key, value pairs where key is the kanji, and value is its hiragana reading. 
 3. In the `kanjipy.py` script, change the `filedir` variable to store the directory of your new json file (Line 12). The location is commented near the top of the script for easy access.
-  
+
+The main reason to make your own list would be if you want to memorize specific kanji words/phrases.  
 See existing `databases/` folder for examples of these text files.  
 For convenience, you can also modify an existing database within the program by selecting the appropriate menu(s).  
-Make sure there are no duplicate kanji words/phrases!
-The main reason to make your own list would be if you want to memorize specific kanji words/phrases.
+Make sure there are no duplicate kanji words/phrases!  
 
 ## Notes:
 - I am in the process of learning the Kanji from the book:「日本語能力試験ターゲット1000 N1 漢字 」(ISBN: 4010924217). As I study the kanji (in order), I will update the uploaded kanji database, partitioning the 1000+ kanji characters into separate files.
