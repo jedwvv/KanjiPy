@@ -131,6 +131,8 @@ def get_user_input_number( prompt: str, valid_choices: list = [] ):
                 return user_input
             else:
                 raise Exception()
+        except KeyboardInterrupt:
+            sys.exit(130)
         except:
             if len(valid_choices) > 0:
                 print("Please enter a valid number from {}.".format(valid_choices))
@@ -145,6 +147,8 @@ def get_user_input_string( prompt: str, valid_choices: list = [] ):
                 return user_input
             else:
                 raise Exception()
+        except KeyboardInterrupt:
+            sys.exit(130)
         except:
             if len(valid_choices) > 0:
                 print("Please enter a valid answer from {}.".format(valid_choices))
