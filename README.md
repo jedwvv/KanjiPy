@@ -2,6 +2,8 @@
 A simple Python script to learn Kanji at your own pace.  
 ![](https://github.com/jedwvv/KanjiPy/blob/main/kanjipy.gif)  
 
+This was originally intended for my personal learning goal of ultimately taking the JLPT N1 exam.  
+
 ## Requirement:
 - Python>=3.9  
 
