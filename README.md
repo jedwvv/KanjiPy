@@ -18,7 +18,7 @@ Simply run the program in a console that supports utf-8 encoding. To check if yo
 
 ## To change to your own personalised Kanji list:
 1. Make a json text file in the folder `'databases/'`.  
-2. In a dictionary format, enter your kanji entries as key, value pairs. 
+2. In a dictionary format, enter your kanji entries as key, value pairs where key is the kanji, and value is its hiragana reading. 
 3. In the `kanjipy.py` script, change the `filedir` variable to store the directory of your new json file (Line 12). The location is commented near the top of the script for easy access.
   
 See existing `databases/` folder for examples of these text files.  
