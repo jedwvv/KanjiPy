@@ -39,7 +39,7 @@ class KanjiDataBase:
         print("\nTry to enter the correct reading for the following kanji.")
         for s, (kanji, reading) in enumerate(test_kanji):
             while True:
-                user_reading = get_user_input_string("\t{}) {}: ".format(s, kanji))
+                user_reading = get_user_input_string("\t{}) {}: ".format(s+1, kanji))
                 if user_reading != reading:
                     user_input = get_user_input_string("\nSorry, that's not quite right.\nWould you like to try again? 'y' or 'n': ", valid_choices=["y", "n"])
                     if user_input == "y":
