@@ -22,18 +22,18 @@ class KanjiDataBase:
         self.data.pop( kanji, "" )
     
     def save_database( self, filedir: str):
-        with open( filedir, "w" ) as f:
+        with open( filedir, "w", encoding="utf8") as f:
             json.dump( self.data, f, ensure_ascii=False , indent=2 )
         
     def load_database( self, filedir: str):
-        with open( filedir, "r" ) as f:
+        with open( filedir, "r", encoding="utf8") as f:
             self.data = json.load( f )
     
     def get_size( self ):
         return len( self.data )
 
     def test_kanjireading( self, number_to_test = 1 ):
-        if number_to_test < len(self.data):
+        if number_to_test > self.get_size():
             raise Exception("Not enough kanji in database for desired number of kanji to test. Add more kanji or lower test number requirement.")
         test_kanji = random.sample( list(self.data.items()), number_to_test )
         print("\nTry to enter the correct reading for the following kanji.")
@@ -56,9 +56,10 @@ def main():
     #Start Program 
     kanji_data = KanjiDataBase()
     kanji_data.load_database(filedir)
+    
     clear()
     print("\nWelcome to KanjiPy! A simple Python script to learn Kanji at your own pace.")
-    
+
     break_main_loop = False
     while not break_main_loop:
         print("\n\tWhat would you like to do?")
