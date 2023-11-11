@@ -9,7 +9,7 @@ random.seed(datetime.now().timestamp())
 ############################################################
 #### CHANGE DESIRED DATABASE FILE DIRECTORY UNDER HERE #####
 ############################################################
-filedir = "databases/N1_1_100.json"
+filedir = "databases/latest.json"
 
 class KanjiDataBase:
     def __init__(self):
@@ -76,6 +76,7 @@ def main():
 
     break_main_loop = False
     while not break_main_loop:
+        print("Current database size: {}".format(kanji_data.get_size()))
         print("\n\tWhat would you like to do?")
         print("\t1: Add Kanji to the database")
         print("\t2: Remove Kanji from the database")
