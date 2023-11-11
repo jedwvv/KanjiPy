@@ -9,7 +9,7 @@ random.seed(datetime.now().timestamp())
 ############################################################
 #### CHANGE DESIRED DATABASE FILE DIRECTORY UNDER HERE #####
 ############################################################
-filedir = "databases/N1_1_100_v2.json"
+filedir = "databases/N1_1_100.json"
 
 class KanjiDataBase:
     def __init__(self):
@@ -23,7 +23,7 @@ class KanjiDataBase:
     
     def save_database( self, filedir: str):
         with open( filedir, "w", encoding="utf8") as f:
-            json.dump( self.data, f, ensure_ascii=False, indent=2 )
+            json.dump( self.data, f, ensure_ascii=False , indent=2 )
         
     def load_database( self, filedir: str):
         with open( filedir, "r", encoding="utf8") as f:
@@ -51,17 +51,15 @@ class KanjiDataBase:
         
         #Prompts for the user's guesses begin here.
         print("\nTry to enter the correct reading for the following kanji.")
-        for s, (kanji, readings) in enumerate(test_kanji):
-            if type(readings) != list:
-                readings = [readings]
+        for s, (kanji, reading) in enumerate(test_kanji):
             while True:
                 user_reading = get_user_input_string("\t{}) {}: ".format(s+1, kanji))
-                if user_reading not in readings:
+                if user_reading != reading:
                     user_input = get_user_input_string("\nSorry, that's not quite right.\nWould you like to try again? 'y' or 'n': ", valid_choices=["y", "n"])
                     if user_input == "y":
                         continue
                     else:
-                        print("The correct reading(s) for {} is/are: {}".format(kanji, readings))
+                        print("The correct reading for {} is {}".format(kanji, reading))
                         print("Moving onto the next kanji.")
                         break
                 else:
