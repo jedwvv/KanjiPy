@@ -78,7 +78,6 @@ def main():
 
     break_main_loop = False
     while not break_main_loop:
-        print("Current Kanji Database Size: {}".format(kanji_data.get_size()))
         print("\n\tWhat would you like to do?")
         print("\t1: Add Kanji to the database")
         print("\t2: Remove Kanji from the database")
