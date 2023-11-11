@@ -52,6 +52,8 @@ class KanjiDataBase:
         #Prompts for the user's guesses begin here.
         print("\nTry to enter the correct reading for the following kanji.")
         for s, (kanji, readings) in enumerate(test_kanji):
+            if type(readings) != list:
+                readings = [readings]
             while True:
                 user_reading = get_user_input_string("\t{}) {}: ".format(s+1, kanji))
                 if user_reading in readings:
